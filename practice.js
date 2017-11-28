@@ -7,46 +7,46 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
+  const me = {
+    name: 'Larry',
+    age: 26
+  };
 
-
-
+  //alert(me.name);
 
 
 
 //NEXT PROBLEM
 
-
-
-
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
-
-
-
-
+  const favoriteThings = {
+    band: 'Galantis',
+    food: 'Mashed Potatoes and Gravy',
+    person: 'Myself',
+    book: 'Ender\'s Game',
+    movie: 'Star Wars',
+    holiday: 'Chistmas'
+  }
 
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
-
-
+  favoriteThings.car = 'Tesla';
+  favoriteThings.brand = 'Uniqlo';
 
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
   //Code here
-
-
+  favoriteThings.food = 'Chicken Nuggets';
+  favoriteThings.book = 'Harry Potter';
 
 
 
 //NEXT PROBLEM
-
-
 
 /* 
 Create an empty Object called backPack. Now, create a variable called 'item'
@@ -59,16 +59,16 @@ that is named color, with the value being the color of your backpack.
 */
 
   //Code here
-
-
-
-
+  const backPack = {};
+  let item = 'firstPocket';
+  backPack[item] = 'chapstick';
+  backPack.color = 'Navy Blue';
 
 
 //After you do the above, alert your entire backPack object.
 
   //Code here
-
+  //alert(backPack);
  
 
 /*
@@ -78,15 +78,11 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
-
-
+  console.log(backPack);
 
 
 
 //NEXT PROBLEM
-
-
-
 
 var user2 = {
         name: 'Ty',
@@ -100,8 +96,8 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
-
-
+  user2.name = 'Tyler S. McGinnis';
+  user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -122,30 +118,29 @@ var user2 = {
 //Create an empty object called methodCollection.
 
   //Code Here
-
-
+  const methodCollection = {};
 
 
 /*
 Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
- which logs 'hello' to the console. 
- */
+which logs 'hello' to the console. 
+*/
 
   //Code Here
-
-
-
+  methodCollection.alertHello = () => {
+    alert('hello');
+  }
+  methodCollection.logHello = () => {
+    console.log('hello');
+  }
 
 
 //Now call your alertHello and logHello methods.
 
   //Code Here
-
-
-
-
-
+  //methodCollection.alertHello();
+  //methodCollection.logHello();
 
 
 
