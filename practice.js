@@ -152,20 +152,18 @@ which logs 'hello' to the console.
 // parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
+  const makePerson = (name, birthday, ssn) => {
+    return {name, birthday, ssn};
+  }
 
-
-
-
-
-  
 
 
 //NEXT PROBLEM
 
-
-
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
-
+  const makeCard = (cardNumber, expirationDate, securityCode) => {
+    return {cardNumber, expirationDate, securityCode};
+  }
 
